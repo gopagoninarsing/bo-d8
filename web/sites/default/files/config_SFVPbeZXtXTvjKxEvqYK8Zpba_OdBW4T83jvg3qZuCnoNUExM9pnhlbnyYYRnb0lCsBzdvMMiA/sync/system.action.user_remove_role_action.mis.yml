@@ -1,0 +1,14 @@
+uuid: 8e951cad-22de-4baf-bb4f-e3619671b6cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mis
+  module:
+    - user
+id: user_remove_role_action.mis
+label: 'Remove the MIS role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mis

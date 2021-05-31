@@ -1,0 +1,33 @@
+uuid: b4188887-81bf-4a3d-b4e8-957c910d3f27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_center_manager_name
+    - node.type.center
+id: node.center.field_center_manager_name
+field_name: field_center_manager_name
+entity_type: node
+bundle: center
+label: 'Center Manager Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        center_manager: center_manager
+        administrator: '0'
+        mis: '0'
+        director: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 165d36e5-b08a-453e-87cc-c4129f3c37f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_center_status
+    - node.type.center
+  module:
+    - options
+id: node.center.field_center_status
+field_name: field_center_status
+entity_type: node
+bundle: center
+label: 'Center Status'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

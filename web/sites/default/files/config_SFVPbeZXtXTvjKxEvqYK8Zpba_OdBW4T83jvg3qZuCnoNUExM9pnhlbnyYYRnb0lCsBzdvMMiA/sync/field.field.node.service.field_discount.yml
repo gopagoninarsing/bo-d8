@@ -1,0 +1,23 @@
+uuid: de5f1745-7fbb-43e2-8986-8a6ef3574204
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discount
+    - node.type.service
+id: node.service.field_discount
+field_name: field_discount
+entity_type: node
+bundle: service
+label: Discount
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,48 @@
+uuid: 6612094e-4714-4f30-9e45-45267bf37ca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rate_plan.field_allow_hospital_bills
+    - field.field.node.rate_plan.field_demarkation
+    - field.field.node.rate_plan.field_do_not_pull_from_center
+    - field.field.node.rate_plan.field_govt_insurance_id
+    - field.field.node.rate_plan.field_notification_mail_frequenc
+    - field.field.node.rate_plan.field_old_items_status
+    - field.field.node.rate_plan.field_preauth_status
+    - field.field.node.rate_plan.field_price_renew_date
+    - field.field.node.rate_plan.field_price_status
+    - field.field.node.rate_plan.field_rate_plan_id
+    - field.field.node.rate_plan.field_rate_plan_type
+    - field.field.node.rate_plan.field_show_payments
+    - field.field.node.rate_plan.field_valid_from
+    - field.field.node.rate_plan.field_valid_to
+    - node.type.rate_plan
+  module:
+    - user
+id: node.rate_plan.teaser
+targetEntityType: node
+bundle: rate_plan
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_allow_hospital_bills: true
+  field_demarkation: true
+  field_do_not_pull_from_center: true
+  field_govt_insurance_id: true
+  field_notification_mail_frequenc: true
+  field_old_items_status: true
+  field_preauth_status: true
+  field_price_renew_date: true
+  field_price_status: true
+  field_rate_plan_id: true
+  field_rate_plan_type: true
+  field_show_payments: true
+  field_valid_from: true
+  field_valid_to: true

@@ -1,0 +1,23 @@
+uuid: 9645b285-2a75-423e-8743-4e5a421e75e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_base_price
+    - node.type.service
+id: node.service.field_base_price
+field_name: field_base_price
+entity_type: node
+bundle: service
+label: 'Base Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: 4b580514-913d-4242-9f2b-dbf304b05163
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_center_type
+    - node.type.center
+  module:
+    - options
+id: node.center.field_center_type
+field_name: field_center_type
+entity_type: node
+bundle: center
+label: 'Center Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Dialysis Center'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

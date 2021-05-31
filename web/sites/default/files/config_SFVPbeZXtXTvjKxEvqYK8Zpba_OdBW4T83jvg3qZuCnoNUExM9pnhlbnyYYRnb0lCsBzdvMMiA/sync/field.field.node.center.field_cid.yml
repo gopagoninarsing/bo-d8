@@ -1,0 +1,19 @@
+uuid: aaf946d4-8238-4d1f-aa39-36064459fb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cid
+    - node.type.center
+id: node.center.field_cid
+field_name: field_cid
+entity_type: node
+bundle: center
+label: cid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

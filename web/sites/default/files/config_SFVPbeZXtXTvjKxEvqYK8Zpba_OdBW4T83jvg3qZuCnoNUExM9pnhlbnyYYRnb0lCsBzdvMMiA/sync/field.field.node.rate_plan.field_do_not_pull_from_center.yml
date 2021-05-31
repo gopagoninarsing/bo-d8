@@ -1,0 +1,21 @@
+uuid: 4be7bd7c-5d74-4385-bd96-a88761ec1d0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_pull_from_center
+    - node.type.rate_plan
+  module:
+    - options
+id: node.rate_plan.field_do_not_pull_from_center
+field_name: field_do_not_pull_from_center
+entity_type: node
+bundle: rate_plan
+label: 'Do Not Pull From Center'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

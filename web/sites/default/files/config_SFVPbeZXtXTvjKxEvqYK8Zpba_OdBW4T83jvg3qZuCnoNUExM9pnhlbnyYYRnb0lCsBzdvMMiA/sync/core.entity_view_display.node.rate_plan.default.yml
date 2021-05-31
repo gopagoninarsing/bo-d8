@@ -1,0 +1,144 @@
+uuid: 8cc6b105-f69b-43d4-9ebc-b390ab445e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rate_plan.field_allow_hospital_bills
+    - field.field.node.rate_plan.field_demarkation
+    - field.field.node.rate_plan.field_do_not_pull_from_center
+    - field.field.node.rate_plan.field_govt_insurance_id
+    - field.field.node.rate_plan.field_notification_mail_frequenc
+    - field.field.node.rate_plan.field_old_items_status
+    - field.field.node.rate_plan.field_preauth_status
+    - field.field.node.rate_plan.field_price_renew_date
+    - field.field.node.rate_plan.field_price_status
+    - field.field.node.rate_plan.field_rate_plan_id
+    - field.field.node.rate_plan.field_rate_plan_type
+    - field.field.node.rate_plan.field_show_payments
+    - field.field.node.rate_plan.field_valid_from
+    - field.field.node.rate_plan.field_valid_to
+    - node.type.rate_plan
+  module:
+    - datetime
+    - options
+    - user
+id: node.rate_plan.default
+targetEntityType: node
+bundle: rate_plan
+mode: default
+content:
+  field_allow_hospital_bills:
+    weight: 103
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_demarkation:
+    weight: 102
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_do_not_pull_from_center:
+    weight: 107
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_govt_insurance_id:
+    weight: 112
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_notification_mail_frequenc:
+    weight: 109
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_old_items_status:
+    weight: 113
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_preauth_status:
+    weight: 104
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_price_renew_date:
+    weight: 108
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_price_status:
+    weight: 110
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_rate_plan_id:
+    weight: 111
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rate_plan_type:
+    weight: 105
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_show_payments:
+    weight: 106
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_valid_from:
+    weight: 115
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_valid_to:
+    weight: 114
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

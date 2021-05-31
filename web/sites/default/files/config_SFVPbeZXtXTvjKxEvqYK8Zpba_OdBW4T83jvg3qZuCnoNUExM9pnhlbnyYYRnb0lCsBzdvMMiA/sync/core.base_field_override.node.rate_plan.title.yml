@@ -1,0 +1,18 @@
+uuid: 82481084-dfcc-4a01-91e6-583f01b54ede
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rate_plan
+id: node.rate_plan.title
+field_name: title
+entity_type: node
+bundle: rate_plan
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

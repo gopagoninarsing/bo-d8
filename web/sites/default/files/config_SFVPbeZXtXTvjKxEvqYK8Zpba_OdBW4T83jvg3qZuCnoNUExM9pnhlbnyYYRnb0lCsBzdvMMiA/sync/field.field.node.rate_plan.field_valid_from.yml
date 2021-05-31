@@ -1,0 +1,21 @@
+uuid: c19e641b-d5e3-4fbd-83b3-cedad5f5a34f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valid_from
+    - node.type.rate_plan
+  module:
+    - datetime
+id: node.rate_plan.field_valid_from
+field_name: field_valid_from
+entity_type: node
+bundle: rate_plan
+label: 'Valid From'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

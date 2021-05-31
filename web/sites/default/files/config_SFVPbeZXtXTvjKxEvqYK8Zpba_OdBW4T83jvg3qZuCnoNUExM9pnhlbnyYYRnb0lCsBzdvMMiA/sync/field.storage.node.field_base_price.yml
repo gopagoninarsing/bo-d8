@@ -1,0 +1,20 @@
+uuid: 00ffab0c-e2b0-460f-b667-e2ba69a90ecf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_base_price
+field_name: field_base_price
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

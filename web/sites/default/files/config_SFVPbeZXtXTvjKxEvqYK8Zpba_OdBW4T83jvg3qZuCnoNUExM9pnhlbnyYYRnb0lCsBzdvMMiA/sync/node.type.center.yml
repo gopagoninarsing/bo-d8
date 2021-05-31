@@ -1,0 +1,17 @@
+uuid: d1e917b9-eb5a-4dce-8277-456cd0f6d720
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Center
+type: center
+description: 'Nephroplus Center'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

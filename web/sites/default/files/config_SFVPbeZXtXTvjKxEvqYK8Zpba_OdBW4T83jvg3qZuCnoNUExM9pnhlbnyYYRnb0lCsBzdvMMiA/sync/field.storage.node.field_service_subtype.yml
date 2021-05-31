@@ -1,0 +1,126 @@
+uuid: 447b4b62-01ee-43e8-bde6-50ab9b58f47d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_service_subtype
+field_name: field_service_subtype
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Consultations
+      label: Consultations
+    -
+      value: Dialysis
+      label: Dialysis
+    -
+      value: 'Dialysis Add Ons'
+      label: 'Dialysis Add Ons'
+    -
+      value: EPO
+      label: EPO
+    -
+      value: External
+      label: External
+    -
+      value: 'Extra Inventory'
+      label: 'Extra Inventory'
+    -
+      value: General
+      label: General
+    -
+      value: Iron
+      label: Iron
+    -
+      value: Lab
+      label: Lab
+    -
+      value: Misc
+      label: Misc
+    -
+      value: Procedures
+      label: Procedures
+    -
+      value: Vitamin
+      label: Vitamin
+    -
+      value: Dialyzer
+      label: Dialyzer
+    -
+      value: '5008S Dialysis'
+      label: '5008S Dialysis'
+    -
+      value: CRRT
+      label: CRRT
+    -
+      value: 'CRRT Add-ons'
+      label: 'CRRT Add-ons'
+    -
+      value: 'CRRT Consumables'
+      label: 'CRRT Consumables'
+    -
+      value: 'Dialysis Consumables'
+      label: 'Dialysis Consumables'
+    -
+      value: 'Emergency Dialysis'
+      label: 'Emergency Dialysis'
+    -
+      value: 'ICU Dialysis'
+      label: 'ICU Dialysis'
+    -
+      value: 'IP Dialysis'
+      label: 'IP Dialysis'
+    -
+      value: 'Other Charges'
+      label: 'Other Charges'
+    -
+      value: 'Other Procedures'
+      label: 'Other Procedures'
+    -
+      value: 'PD Consumable'
+      label: 'PD Consumable'
+    -
+      value: 'PD Dialysis'
+      label: 'PD Dialysis'
+    -
+      value: Plasmapheresis
+      label: Plasmapheresis
+    -
+      value: 'Procedure Consumables'
+      label: 'Procedure Consumables'
+    -
+      value: 'Reuse Dialysis'
+      label: 'Reuse Dialysis'
+    -
+      value: 'Reuse Dialysis-Catheterization'
+      label: 'Reuse Dialysis-Catheterization'
+    -
+      value: 'Reuse Dialysis-Premium'
+      label: 'Reuse Dialysis-Premium'
+    -
+      value: 'Single-use Dialysis'
+      label: 'Single-use Dialysis'
+    -
+      value: 'Single-use Dialysis-Premium'
+      label: 'Single-use Dialysis-Premium'
+    -
+      value: 'Single-use Dialysis-Procedures'
+      label: 'Single-use Dialysis-Procedures'
+    -
+      value: SLED
+      label: SLED
+    -
+      value: 'SLED Add-ons'
+      label: 'SLED Add-ons'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

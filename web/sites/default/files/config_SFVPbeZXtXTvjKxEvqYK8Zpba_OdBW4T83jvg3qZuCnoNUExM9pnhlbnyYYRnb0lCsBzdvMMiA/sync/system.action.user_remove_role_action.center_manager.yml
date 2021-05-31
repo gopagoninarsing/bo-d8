@@ -1,0 +1,14 @@
+uuid: 8a3f6972-49e5-4da0-8fe1-1b77afd3bfcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.center_manager
+  module:
+    - user
+id: user_remove_role_action.center_manager
+label: 'Remove the Center Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: center_manager

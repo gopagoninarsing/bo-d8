@@ -1,0 +1,19 @@
+uuid: 8460b7ad-5be5-46a4-8067-f5869096d6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rate_plan_id
+    - node.type.rate_plan
+id: node.rate_plan.field_rate_plan_id
+field_name: field_rate_plan_id
+entity_type: node
+bundle: rate_plan
+label: 'Rate Plan ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

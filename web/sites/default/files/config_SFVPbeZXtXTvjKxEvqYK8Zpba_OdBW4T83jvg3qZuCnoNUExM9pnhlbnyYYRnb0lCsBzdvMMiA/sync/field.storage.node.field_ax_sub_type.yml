@@ -1,0 +1,114 @@
+uuid: d461fd63-b8b3-4d7e-ae38-1a7c0dd29be4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ax_sub_type
+field_name: field_ax_sub_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '5008S Dialysis'
+      label: '5008S Dialysis'
+    -
+      value: CRRT
+      label: '5008S Dialysis'
+    -
+      value: 'CRRT Add-ons'
+      label: '5008S Dialysis'
+    -
+      value: 'Dialysis Add-ons'
+      label: '5008S Dialysis'
+    -
+      value: 'CRRT Consumables'
+      label: '5008S Dialysis'
+    -
+      value: 'Dialysis Consumables'
+      label: '5008S Dialysis'
+    -
+      value: 'Emergency Dialysis'
+      label: '5008S Dialysis'
+    -
+      value: 'ICU Dialysis'
+      label: '5008S Dialysis'
+    -
+      value: 'IP Dialysis'
+      label: '5008S Dialysis'
+    -
+      value: 'Other Charges'
+      label: 'Other Charges'
+    -
+      value: 'PD Consumable'
+      label: 'PD Consumable'
+    -
+      value: 'PD Dialysis'
+      label: 'PD Dialysis'
+    -
+      value: Plasmapheresis
+      label: Plasmapheresis
+    -
+      value: 'Reuse Dialysis'
+      label: 'Reuse Dialysis'
+    -
+      value: 'Reuse Dialysis-Premium'
+      label: 'Reuse Dialysis-Premium'
+    -
+      value: 'Reuse Dialysis-Catheterization'
+      label: 'Reuse Dialysis-Catheterization'
+    -
+      value: 'Single-use Dialysis'
+      label: 'Single-use Dialysis'
+    -
+      value: 'Single-use Dialysis-Premium'
+      label: 'Single-use Dialysis-Premium'
+    -
+      value: 'Single-use Dialysis-Procedures'
+      label: 'Single-use Dialysis-Procedures'
+    -
+      value: SLED
+      label: SLED
+    -
+      value: 'SLED Add-ons'
+      label: 'SLED Add-ons'
+    -
+      value: HHD
+      label: HHD
+    -
+      value: Dialyzer
+      label: Dialyzer
+    -
+      value: Lab
+      label: Lab
+    -
+      value: Consultations
+      label: Consultations
+    -
+      value: General
+      label: General
+    -
+      value: 'Other Procedures'
+      label: 'Other Procedures'
+    -
+      value: 'Procedure Consumables'
+      label: 'Procedure Consumables'
+    -
+      value: Procedures
+      label: Procedures
+    -
+      value: EPO
+      label: EPO
+    -
+      value: Iron
+      label: Iron
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

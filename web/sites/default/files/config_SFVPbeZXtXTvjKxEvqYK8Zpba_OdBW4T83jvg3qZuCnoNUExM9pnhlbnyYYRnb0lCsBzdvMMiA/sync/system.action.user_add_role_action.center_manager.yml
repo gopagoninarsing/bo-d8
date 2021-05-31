@@ -1,0 +1,14 @@
+uuid: efaddca2-59a5-41dc-a2d6-5800b4922e86
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.center_manager
+  module:
+    - user
+id: user_add_role_action.center_manager
+label: 'Add the Center Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: center_manager

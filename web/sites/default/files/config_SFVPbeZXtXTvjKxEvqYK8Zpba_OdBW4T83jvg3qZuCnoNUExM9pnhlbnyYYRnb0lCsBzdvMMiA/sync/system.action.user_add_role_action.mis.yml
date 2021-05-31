@@ -1,0 +1,14 @@
+uuid: e6359e30-e7b8-4a95-9f7d-c963c28952b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mis
+  module:
+    - user
+id: user_add_role_action.mis
+label: 'Add the MIS role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mis
