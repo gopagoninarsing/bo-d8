@@ -1,9 +1,0 @@
-uuid: 58f4049f-8050-4891-81fe-47d4398ff5e6
-langcode: en
-status: true
-dependencies: {  }
-id: center_manager
-label: 'Center Manager'
-weight: 3
-is_admin: null
-permissions: {  }
