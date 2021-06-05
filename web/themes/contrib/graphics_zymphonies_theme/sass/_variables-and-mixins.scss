@@ -1,0 +1,36 @@
+
+// Variables
+$fontFamily: 'Source Sans Pro', sans-serif;
+$titleFontFamily: 'Source Sans Pro', sans-serif;
+$titleFontColor: #000;
+$baseFontSize: 16px;
+$bodyBGColor: #f1f1f1;
+$baseFontColor: #4a4a4a;
+
+$linkColor: #64b448;
+$linkColorHover: #449128;
+$borderColor: #e8e8e8;
+
+// Menu color
+$desktopMenuColor: #fff;
+$desktopMenuHover: #fff;
+$desktopMenuHoverBG: #333;
+
+// Mixin
+@mixin globalButton(){
+	border: 0;
+	cursor: pointer;
+	color: #000;
+	padding: 10px 16px;
+	line-height: 100%;
+	margin-right: 2px;
+	display: inline-block;
+	background: #ddd;
+	@include border-radius(0px);
+	@include transition(all 0.5s);
+}
+
+@mixin globalButtonHover(){
+	background: $linkColorHover;
+    color: #fff;
+}

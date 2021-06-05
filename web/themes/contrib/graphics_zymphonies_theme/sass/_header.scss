@@ -1,0 +1,148 @@
+
+// Header
+.top-nav{
+	position: relative;
+	padding: 15px 10px;
+	background: #eee;
+
+	.block, p{
+		margin: 0;
+	}
+}
+
+.top-nav-right{
+	float: right;
+}
+
+.main-header {
+  	nav{	  
+		border: 0;
+		margin: 0;
+		position: relative;
+		min-height: auto;
+		background: none;
+		@include border-radius(0);
+	}
+	.region{
+		position: relative;
+		padding: 25px 0;
+	}
+	.block{ margin: 0; }
+	p, .block{ margin: 0; }
+}
+
+// Region header
+.site-branding{
+	margin: 0;
+}
+
+.region-header{
+	padding: 14px 15px;
+	background: #4a4d50;
+
+	.brand{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 1.5em;
+
+		a{
+			color: #fff;
+			display: block;
+			font-weight: 400;
+
+			img{
+				vertical-align: middle;
+			}
+		}
+		.site-branding__slogan{
+			font-size: .5em;
+			text-transform: uppercase;
+			vertical-align: top;
+		}
+	}
+}
+
+// Search form
+.search-block-form{
+	margin: 0 auto;
+}
+
+.region-search{
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#search-block-form{
+	display: table;
+	width: 100%;
+
+	.form-item, 
+	.form-actions{
+		display: table-cell;
+		vertical-align: top;
+	}
+	.form-actions{
+		width: 35px;
+	}
+	input.form-submit{
+		background: image-url("search.png") no-repeat center $linkColorHover;
+		font-size: 0;
+		width: 100%;
+		height: 35px;
+		padding: 0 20px;
+		vertical-align: top;
+		border-color: $linkColorHover;
+		@include border-radius(0);
+
+		&:hover{
+			background-color: $linkColor;
+			border-color: $linkColor;
+		}
+	}
+	input{
+		width: 100%;
+		height: 35px;
+		padding: 15px;
+		@include border-radius(0);
+	}
+}
+
+// Advertisement
+.advertisement {
+	text-align: center;
+	margin: 20px 0;
+}
+
+// Breadcrumb
+.breadcrumb{
+	font-size: .75em;
+    padding: 2px 0;
+    margin: 0;
+    display: inline-block;
+    border-radius: 0;
+
+	.breadcrumb-divider{
+		display: none;
+	}
+
+	ul,ol{
+		padding: 0;
+		margin: 0;
+
+			li{
+				display: inline-block;
+				padding: 0 8px;
+
+				&:after{
+					content: " >";
+					padding-left: 15px;
+				}
+
+				&:last-child:after{
+					display: none;
+				
+			}
+		}
+	}
+}

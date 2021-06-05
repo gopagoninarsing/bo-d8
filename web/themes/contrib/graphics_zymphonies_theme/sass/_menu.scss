@@ -1,0 +1,155 @@
+
+// Menu
+.navbar-toggle{
+	cursor: pointer;
+	background: none;
+	border: 0;
+	padding: 5px 6px;
+	z-index: 99;
+	position: relative;
+
+	&:focus{
+		outline: none;
+	}
+	
+	.fas{
+		font-size: 1.5em;
+		color: #000;
+		border: 0;
+		box-shadow: none;
+	}
+}
+
+nav h2{
+	display: none;
+}
+
+.menu-base-theme{
+	background: none;
+
+	li{
+		display: block;
+		width: 100%;
+		border: 0;
+
+		a{
+			text-transform: uppercase;
+			font-family: $titleFontFamily;
+			color: $desktopMenuColor;
+			line-height: 100%;
+			padding: 20px;
+			background: none;
+			border: 0;
+			border-bottom: 1px solid #4b4e53;
+
+			&:hover, 
+			&:focus, 
+			&:active, 
+			&.highlighted{
+				background: $desktopMenuHoverBG;
+				color: $desktopMenuHover;
+				line-height: 100%;
+				padding: 20px;
+			}
+			span.sub-arrow{
+				border: 0;
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				top: 18px;
+				font-size: 2rem;
+				padding: 3px 0;
+				right: 20px;
+				left: auto;
+			}
+			&.highlighted{
+				span.sub-arrow{
+					font-size: 0;
+
+					&:after{
+						font-size: 2rem;
+						position: absolute;
+						top: 0;
+						right: 0;
+						left: auto;
+						z-index: 99;
+						content: "-";
+						width: 20px;
+						height: 20px;
+						color: #fff;
+						line-height: 40%;
+						padding: 2px 0;
+					}
+				}
+			}
+		}
+		ul{
+			position: static;
+			background: none;
+			border: 0;
+		}
+	}
+}
+
+.expand-menu{
+	position: relative;
+
+	&:after{
+		content: "";
+		position: fixed;
+		z-index: 9;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.95);
+	}
+
+	.navbar-toggle .fas{
+		color: #fff;
+	}
+
+	.left-wrapper{
+		left: 0;
+	}
+	.content-wrapper{
+		padding-left: 300px;
+		width: 100%;
+	}
+}
+
+// Footer Menu
+.region-footer-menu{	
+	ul{
+		margin: 10px 0;
+		padding: 0;
+	}
+	nav li{
+		display: inline-block;
+		a{
+			display: block;
+			padding: 2px 15px 2px 0;
+		}
+	}
+}
+
+// Top menu
+.user-menu{
+	display: inline-block;
+	text-align: right;
+
+	ul.menu{
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			padding-right: 10px;
+
+			a{
+				padding: 10px 0;
+				display: block;
+				line-height: 100%;
+			}
+		}
+	}
+}
