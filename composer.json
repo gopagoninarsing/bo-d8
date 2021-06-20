@@ -21,7 +21,8 @@
         "drupal/core-recommended": "^9.1",
         "drupal/examples": "^3.0",
         "drupal/graphics_zymphonies_theme": "^1.0",
-        "drupal/profile": "^1.2"
+        "drupal/profile": "^1.2",
+        "drupal/twig_vardumper": "^3"
     },
     "conflict": {
         "drupal/drupal": "*"
