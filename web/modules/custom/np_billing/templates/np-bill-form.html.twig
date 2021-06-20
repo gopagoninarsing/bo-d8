@@ -1,0 +1,98 @@
+
+<div class="container-fluid np-bill-form">
+  <div class="row">
+
+    <div class="col-sm-6 bill-form">
+
+      <div class="guest-selector bill-border">
+        <div class="row bill-field-guest">
+          <div class="col-sm-12"> {{ form.guest }}</div>
+        </div>
+      </div>
+
+      <div class="guest-bill-details bill-border">
+        <div class="row bill-field-dates">
+          <div class="col-sm-4">{{ form.bill_date }}</div>
+          <div class="col-sm-4">{{ form.session_date }}</div>
+          <div class="col-sm-4">{{ form.bill_cycle }}</div>
+        </div>
+
+        <div class="row bill-guest-assets">
+          <div class="col-sm-8 guest-rateplan">
+              Rateplan:{{ form.rateplan }}
+          </div>
+          <div class="col-sm-4">
+            <div>Pre-auth:{{ form.preauth }}</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="billing-section">Billing Items</div>
+      <div class="bills-item-selector">
+        <div class="row item-seletor">
+          <div class="col-sm-12"> {{ form.bill_items }}</div>
+        </div>
+
+        <div class="row bill-item-list">
+          <table class="bill-items-table p1 bill-border">
+            <tr class='list-header'>
+                <td>ITEM NAME</td>
+                <td>PRICE</td>
+                <td>Discount</td>
+                <td>QUANTITY</td>
+                <td>TOTAL</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      {{ form | without('guest', 'bill_date',
+                        'session_date', 'bill_cycle',
+                        'bill_items', 'rateplan',
+                        'preauth', 'preauth_validity') }}
+
+    </div> <!-- Bill FORM END -->
+
+    <div class="col-sm-6 guest-information">
+      <div class="card">
+        <div class="card-header text-center">Bill Preview</div>
+          <table>
+              <tr>
+                <td>Guest Name</td>
+                <td><span class='uname'></span></td>
+                <td>Guest Type</td>
+                <td><span class='utype'></span></td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td><span class='udob'></span></td>
+                <td>Gender</td>
+                <td><span class='ugender'></span></td>
+              </tr>
+              <tr>
+                <td>Mobile</td>
+                <td><span class='umobile'></span></td>
+                <td>Primary Nephrologist</td>
+                <td><span class='unephro'></span></td>
+              </tr>
+              <tr>
+                <td>Deposit</td>
+                <td><span class='udeposit'></span></td>
+                <td>Rateplan</td>
+                <td><span class='uinsurence'></span></td>
+              </tr>
+              <tr>
+                <td>Pre-auth Availability </td>
+                <td><div>{{ form.preauth_validity }}</div></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+          </table>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,4 +1,4 @@
-/** 
+/**
 	* Filename:     global.css
 	* Version:      1.0.0 (20 Sep 2019)
 	* Website:      https://www.zymphonies.com
@@ -341,7 +341,7 @@ body {
   background: #fff;
   margin: 0 auto; }
   .main-container .left-wrapper {
-    width: 300px;
+    width: 250px;
     background: #404347;
     position: fixed;
     top: 0;
@@ -352,7 +352,7 @@ body {
     -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    left: -300px; }
+    left: -250px; }
   .main-container .content-wrapper {
     padding-left: 0;
     width: 100%;

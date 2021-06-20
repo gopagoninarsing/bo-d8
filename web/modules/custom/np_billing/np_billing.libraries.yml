@@ -1,0 +1,10 @@
+billing:
+  css:
+    theme:
+      css/np-custom.css: {}
+  js:
+    js/billing.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

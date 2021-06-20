@@ -6,10 +6,18 @@ np_billing.create_bill:
   requirements:
     _permission: 'access content'
 
-np_billing.simple_form:
-  path: '/simple-form'
+np_billing.np_center_guests.autocomplete:
+  path: '/np-center-guests/{cid}'
   defaults:
-    _form:  '\Drupal\np_billing\Form\SimpleForm'
-    _title: 'Simple form'
+    _controller: '\Drupal\np_billing\Controller\NPGuestsData::centerGuests'
+    _format: json
+  requirements:
+    _permission: 'access content'
+
+np_billing.np_guest.bill_date:
+  path: '/np/guest/bill-data/{uid}'
+  defaults:
+    _controller: '\Drupal\np_billing\Controller\NPGuestsData::guestBillData'
+    _format: json
   requirements:
     _permission: 'access content'

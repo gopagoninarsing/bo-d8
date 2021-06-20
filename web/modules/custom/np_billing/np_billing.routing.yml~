@@ -1,7 +1,0 @@
-np_billing.create_bill:
-  path: '/bill/create'
-  defaults:
-    _title: 'New Bill'
-    _form: '\Drupal\np_billing\Form\BillCreateForm'
-  requirements:
-    _permission: 'access content'

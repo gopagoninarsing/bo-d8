@@ -4,3 +4,27 @@
  * @file
  * Contains Drupal\np_billing\np_billing.module.
  */
+
+function np_billing_theme($existing, $type, $theme, $path) {
+  return [
+    'np_bill_form' => [
+      'render element' => 'form',
+      'template' => 'np-bill-form',
+    ],
+  ];
+}
+
+/*
+*
+TODO Add contraints for Bill/Receipt Numbers
+
+use Drupal\Core\Entity\EntityTypeInterface;
+function YOURMODULE_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($entity_type->id() === 'ENTITY_TYPE' && $bundle === 'BUNDLE_NAME') {
+    if (isset($fields['FIELD_NAME'])) {
+      $fields['FIELD_NAME']->addConstraint('UniqueField');
+    }
+  }
+}
+
+*/

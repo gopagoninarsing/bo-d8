@@ -1,0 +1,10 @@
+services:
+  np_billing_events:
+    class: '\Drupal\np_billing\EventSubscriber\BillingEventsSubscriber'
+    arguments:
+      - '@messenger'
+    tags:
+      - {name : 'event_subscriber'}
+  np.helpers:
+    class: '\Drupal\np_billing\Services\NPHelper'
+    arguments: ['@current_user', '@database']

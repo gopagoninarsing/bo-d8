@@ -1,0 +1,24 @@
+.bill-form {
+  border: 1px solid gray;
+}
+input#edit-guest {
+  width: 62%;
+}
+input.guest-rateplan {
+  width: 75%;
+}
+
+.bill-border {
+  border-bottom: 2px dotted;
+}
+
+
+div.billing-section {
+  padding: 5px 10px;
+  display: block;
+  background: #F1F1F1;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #EAEAEA;
+  color: #000000;
+}
