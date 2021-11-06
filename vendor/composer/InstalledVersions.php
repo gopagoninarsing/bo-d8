@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5654cc841ec75b5f03696c57cd0e9292c459f4b6',
+    'reference' => 'a9a78500357fb30413b32d6530b07e895304d191',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -272,6 +272,15 @@ private static $installed = array (
       array (
         0 => '9.1.9',
       ),
+    ),
+    'drupal/bootstrap_barrio' => 
+    array (
+      'pretty_version' => '5.5.1',
+      'version' => '5.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5.5.1',
     ),
     'drupal/breakpoint' => 
     array (
@@ -898,7 +907,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5654cc841ec75b5f03696c57cd0e9292c459f4b6',
+      'reference' => 'a9a78500357fb30413b32d6530b07e895304d191',
     ),
     'drupal/responsive_image' => 
     array (
@@ -913,6 +922,15 @@ private static $installed = array (
       array (
         0 => '9.1.9',
       ),
+    ),
+    'drupal/restui' => 
+    array (
+      'pretty_version' => '1.20.0',
+      'version' => '1.20.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.20',
     ),
     'drupal/search' => 
     array (
@@ -1693,6 +1711,15 @@ private static $installed = array (
       ),
       'reference' => '17ed9f14c1aa05b1a5cf2e2c5ef2d0be28058ef9',
     ),
+    'twbs/bootstrap' => 
+    array (
+      'pretty_version' => 'v5.0.2',
+      'version' => '5.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '688bce4fa695cc360a0d084e34f029b0c192b223',
+    ),
     'twig/twig' => 
     array (
       'pretty_version' => 'v2.14.1',
@@ -1701,6 +1728,13 @@ private static $installed = array (
       array (
       ),
       'reference' => '5eb9ac5dfdd20c3f59495c22841adc5da980d312',
+    ),
+    'twitter/bootstrap' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v5.0.2',
+      ),
     ),
     'typo3/phar-stream-wrapper' => 
     array (
